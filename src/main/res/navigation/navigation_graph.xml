@@ -8,16 +8,15 @@
         android:id="@+id/MainFragment"
         android:name="com.airi.timer.MainFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_main">
+        tools:layout="@layout/fragment_main"
+        app:startDestination="@id/action_MainFragment_to_CalculateFragment">
         <action
             android:id="@+id/action_MainFragment_to_CalculateFragment"
-            app:destination="@id/CalculateFragment">
-        </action>
+            app:destination="@id/CalculateFragment"></action>
     </fragment>
     <fragment
         android:id="@+id/CalculateFragment"
         android:name="com.airi.timer.CalculateFragment"
         android:label="fragment_second"
-        tools:layout="@layout/fragment_calculate">
-    </fragment>
+        tools:layout="@layout/fragment_calculate"></fragment>
 </navigation>
